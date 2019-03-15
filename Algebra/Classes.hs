@@ -2,7 +2,7 @@
 module Algebra.Classes where
 
 import Prelude as Algebra.Classes (Int,Integer,Float,Double, Foldable (..), (==), Monoid(..), Ord(..)
-                                  ,Real(..), Enum(..), snd, Rational, Functor(..), Eq(..), Bool(..), Semigroup(..))
+                                  ,Real(..), Enum(..), snd, Rational, Functor(..), Eq(..), Bool(..))
 import qualified Prelude
 import qualified Data.Ratio
 import qualified Data.Map.Strict as M
@@ -11,6 +11,7 @@ import Foreign.C
 import Data.Word
 import Data.Binary
 import GHC.Generics
+import Data.Semigroup (Semigroup(..))
 
 infixl 6 -
 infixl 6 +
